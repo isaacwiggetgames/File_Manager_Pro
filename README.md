@@ -11,7 +11,7 @@ File Manager Plus is a simple command-line tool for managing files and directori
 
 ## Usage
 ### Running the Script
-1. Download the `FileManagerPlus.bat` file.
+1. Download the `File_Manager_Plus.bat` file.
 2. Double-click the file to launch the program.
 3. Use the menu options to perform file operations.
 
