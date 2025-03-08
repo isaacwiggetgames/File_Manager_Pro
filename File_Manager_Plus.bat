@@ -1,5 +1,5 @@
 @echo off
-title File Manager Plus (Version 1.1)
+title File Manager Plus (Version 1.2)
 color 0a
 cls
 
@@ -53,7 +53,7 @@ echo 1 = Batch (.bat)
 echo 2 = VBScript (.vbs)
 echo 3 = PowerShell (.ps1)
 echo 4 = Python (.py)
-echo 5  = Javascript (.js)
+echo 5 = Javascript (.js)
 echo 6 = Text File (.txt)
 echo.
 set /p script_type= Enter option: 
@@ -164,18 +164,16 @@ echo        SETTINGS MENU
 echo ============================
 echo 1 = Change Title
 echo 2 = Change Text Color
-echo 3 = Return to Main Menu
-echo 4 = Suggest Feature
-echo 5 = Version
+echo 3 = Suggest Feature
+echo 4 = Version
 echo q = Close
 echo.
 set /p setting_option= Select an option: 
 
 if "%setting_option%"=="1" goto change_title
 if "%setting_option%"=="2" goto color
-if "%setting_option%"=="3" goto start
-if "%setting_option%"=="4" goto suggest_feature
-if "%setting_option%"=="5" goto version
+if "%setting_option%"=="3" goto suggest_feature
+if "%setting_option%"=="4" goto version
 if "%setting_option%"=="q" cls & goto start
 
 echo Invalid option.
@@ -198,7 +196,7 @@ pause
 goto settings
 
 :version
-set version=1.1
+set version=1.2
 echo Version is currently %version%
 pause >nul
 goto start
